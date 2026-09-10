@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Año | René Favaloro</title>
+    <link rel="stylesheet" href="rf.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="encabezado">
+            <div class="institucion">
+                <h1>RENÉ FAVALORO</h1>
+                <p>Colegio Tecnológico</p>
+            </div>
+
+            <div class="curso">
+                <h2>PRIMER AÑO</h2>
+                <p>Campus Virtual · Divulgación Académica</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contenido">
+            <div class="titulo-seccion">
+                <span></span>
+                <h2>CONTENIDOS ACADÉMICOS</h2>
+                <span></span>
+            </div>
+
+            <p class="descripcion">
+                Seleccioná una materia para acceder a sus videos y materiales.
+            </p>
+
+            <div class="materias">
+                <a href="matematica.html" class="materia">
+                    <div class="numero">01</div>
+                    <div class="informacion">
+                        <h3>MATEMÁTICA</h3>
+                        <p>Videos y contenidos de la materia</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="lengua.html" class="materia">
+                    <div class="numero">02</div>
+                    <div class="informacion">
+                        <h3>LENGUA</h3>
+                        <p>Videos y contenidos de la materia</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="historia.html" class="materia">
+                    <div class="numero">03</div>
+                    <div class="informacion">
+                        <h3>HISTORIA</h3>
+                        <p>Videos y contenidos de la materia</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="geografia.html" class="materia">
+                    <div class="numero">04</div>
+                    <div class="informacion">
+                        <h3>GEOGRAFÍA</h3>
+                        <p>Videos y contenidos de la materia</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Colegio Tecnológico René Favaloro · Divulgación Académica</p>
+    </footer>
+
+    <!-- Botón pequeño flotante en la esquina inferior izquierda -->
+    <a href="../primeraño.html" class="boton-flotante-izq" id="btnVolver">
+        <span class="icono">←</span> Volver
+    </a>
+
+    <!-- Script para detectar cuándo se sube o baja en la página -->
+    <script>
+        let lastScrollY = window.scrollY;
+        const btnVolver = document.getElementById('btnVolver');
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+
+            // Si está muy cerca del inicio, mantener visible
+            if (currentScrollY < 50) {
+                btnVolver.classList.remove('oculto');
+            } 
+            // Si el usuario scrollea HACIA ABAJO -> ocultar
+            else if (currentScrollY > lastScrollY) {
+                btnVolver.classList.add('oculto');
+            } 
+            // Si el usuario scrollea HACIA ARRIBA -> mostrar
+            else {
+                btnVolver.classList.remove('oculto');
+            }
+
+            lastScrollY = currentScrollY;
+        });
+    </script>
+
+</body>
+
+</html>

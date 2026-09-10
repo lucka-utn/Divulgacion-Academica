@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selección de Año</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1>Colegio Tecnologico UTN</h1>
+    <div class="linea-dorada"></div>
+    <p class="subtitulo">DIVULGACIÓN ACADÉMICA</p>
+
+    <div class="grid">
+
+      <!-- 1er Año -->
+      <div class="tarjeta" onclick="seleccionar(this)">
+        <span class="numero">01</span>
+        <span class="texto">Primer Año</span>
+        <div class="cursos">
+          <span><a href="/primer año/rf.html">René Favaloro</a></span>
+          <span><a href="/primer año/cm.html">Cesar Milstein</a></span>
+          <span><a href="/primer año/mc.html">Marie Curie</a></span>
+        </div>
+      </div>
+
+      <!-- 2do Año -->
+      <div class="tarjeta" onclick="seleccionar(this)">
+        <span class="numero">02</span>
+        <span class="texto">Segundo Año</span>
+        <div class="cursos">
+          <span><a href="/segundo año/amj.html">Alicia Moreu De Justo</a></span>
+          <span><a href="/segundo año/bh.html">Bernardo Houssay</a></span>
+          <span><a href="/segundo año/cg.html">Cecilia Grierson</a></span>
+        </div>
+      </div>
+
+      <!-- 3er Año -->
+      <div class="tarjeta" onclick="seleccionar(this)">
+        <span class="numero">03</span>
+        <span class="texto">Tercer Año</span>
+        <div class="cursos">
+          <span>Geometría</span>
+          <span>Física</span>
+          <span>Química</span>
+        </div>
+      </div>
+
+      <!-- 4to Año -->
+      <div class="tarjeta" onclick="seleccionar(this)">
+        <span class="numero">04</span>
+        <span class="texto">Cuarto Año</span>
+        <div class="cursos">
+          <span>Cálculo</span>
+          <span>Filosofía</span>
+          <span>Programación</span>
+        </div>
+      </div>
+
+      <!-- 5to Año -->
+      <div class="tarjeta" onclick="seleccionar(this)">
+        <span class="numero">05</span>
+        <span class="texto">Quinto Año</span>
+        <div class="cursos">
+          <span>Estadística</span>
+          <span>Economía</span>
+          <span>Proyecto Final</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function seleccionar(elemento) {
+      document.querySelectorAll('.tarjeta').forEach(t => {
+        t.classList.remove('activo');
+      });
+      elemento.classList.add('activo');
+    }
+  </script>
+
+</body>
+</html>
