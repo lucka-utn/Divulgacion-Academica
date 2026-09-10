@@ -1,136 +1,387 @@
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f7f8fc;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
-  color: #1a2a4a;
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    color: #17263a;
+    display: flex;
+    flex-direction: column;
 }
 
-.contenedor {
-  text-align: center;
-  max-width: 1100px;
-  width: 100%;
+/* =====================================
+   ENCABEZADO
+===================================== */
+
+header {
+    width: 100%;
+    color: white;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(11, 31, 58, 0.96) 0%,
+            rgba(11, 31, 58, 0.88) 45%,
+            rgba(11, 31, 58, 0.65) 75%,
+            rgba(11, 31, 58, 0.45) 100%
+        ),
+        url("berdichevsky_2.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
-/* Título principal */
-h1 {
-  font-size: 2.6rem;
-  font-weight: 600;
-  color: #1a2a4a;
-  letter-spacing: 0.5px;
-  margin-bottom: 12px;
+.encabezado {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 180px;
+    padding: 35px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Línea dorada */
-.linea-dorada {
-  width: 60px;
-  height: 3px;
-  background: #c9a227;
-  margin: 0 auto 14px;
-  border-radius: 2px;
+/* =====================================
+   INSTITUCIÓN
+===================================== */
+
+.institucion h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
-/* Subtítulo */
-.subtitulo {
-  font-size: 0.95rem;
-  color: #6b7a94;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-  font-weight: 500;
+.institucion p {
+    margin-top: 8px;
+    color: #cbd3dc;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
-/* Grid de rectángulos */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 24px;
+/* =====================================
+   INFORMACIÓN DEL CURSO
+===================================== */
+
+.curso {
+    text-align: right;
+    border-right: 3px solid #c9a227;
+    padding-right: 20px;
 }
 
-/* Cada rectángulo */
-.tarjeta {
-  background: #ffffff;
-  border: 2px solid #e4e9f2;
-  border-radius: 18px;
-  padding: 30px 18px 24px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 18px rgba(26, 42, 74, 0.05);
-  min-height: 220px;
+.curso h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
-
-/* Estado activo */
-.tarjeta.activo {
-  border-color: #c9a227;
-  box-shadow: 0 14px 32px rgba(201, 162, 39, 0.25);
-  transform: translateY(-8px);
+.curso p {
+    margin-top: 8px;
+    color: #cbd3dc;
+    font-size: 13px;
 }
 
-/* Número → azul */
-.numero {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #1a2a4a;
-  line-height: 1;
+/* =====================================
+   CONTENIDO PRINCIPAL
+===================================== */
+
+main {
+    flex: 1;
+    width: 100%;
 }
 
-/* Nombre del año → azul */
-.texto {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #1a2a4a;
-  margin-bottom: 8px;
+.contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 30px 80px;
 }
 
-/* Cursos → azul */
-.cursos {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-  margin-top: 4px;
+/* =====================================
+   TÍTULO DE SECCIÓN
+===================================== */
+
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.cursos span {
-  font-size: 0.82rem;
-  color: #1a2a4a;
-  background: #f0f3f9;
-  padding: 5px 10px;
-  border-radius: 6px;
-  font-weight: 500;
+.titulo-seccion span {
+    width: 45px;
+    height: 1px;
+    background: #c9a227;
 }
 
-/* Responsive */
-@media (max-width: 700px) {
-  h1 {
-    font-size: 2rem;
-  }
+.titulo-seccion h2 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #0b1f3a;
+}
 
-  .grid {
+/* =====================================
+   DESCRIPCIÓN
+===================================== */
+
+.descripcion {
+    text-align: center;
+    margin: 18px auto 50px;
+    max-width: 600px;
+    color: #687585;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =====================================
+   MATERIAS
+===================================== */
+
+.materias {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
+    gap: 22px;
+}
 
-  .tarjeta {
-    min-height: 200px;
-    padding: 24px 14px 20px;
-  }
+/* =====================================
+   TARJETA
+===================================== */
 
-  .numero {
-    font-size: 2rem;
-  }
+.materia {
+    min-height: 150px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #dfe3e7;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.materia::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #c9a227;
+}
+
+.numero {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid #c9a227;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b1f3a;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.informacion {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.informacion h3 {
+    color: #0b1f3a;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.informacion p {
+    color: #7a8490;
+    font-size: 13px;
+}
+
+.flecha {
+    font-size: 23px;
+    color: #c9a227;
+}
+
+.materia:hover {
+    background: #fafbfc;
+}
+
+.materia:hover .flecha {
+    color: #0b1f3a;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #e0e4e8;
+    background: white;
+    color: #89929d;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* =====================================
+   BOTÓN PEQUEÑO FLOTANTE (INFERIOR IZQUIERDA)
+===================================== */
+
+.boton-flotante-izq {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 1000;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 18px;
+    background: #0b1f3a;
+    color: #ffffff;
+
+    border: 1px solid #c9a227;
+    border-radius: 30px; /* Bordes redondeados compactos */
+    
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+
+    box-shadow: 0 4px 14px rgba(11, 31, 58, 0.25);
+    
+    /* Transiciones suaves para movimiento e invisibilidad */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 0.3s ease, 
+                background-color 0.2s ease;
+}
+
+.boton-flotante-izq .icono {
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.boton-flotante-izq:hover {
+    background: #162f50;
+    color: #c9a227;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(11, 31, 58, 0.35);
+}
+
+.boton-flotante-izq:hover .icono {
+    transform: translateX(-3px);
+}
+
+/* Estado oculto al deslizar hacia abajo */
+.boton-flotante-izq.oculto {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(30px); /* Se esconde hacia abajo suavemente */
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 700px) {
+    .encabezado {
+        min-height: auto;
+        padding: 30px 25px;
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .curso {
+        text-align: left;
+        border-right: none;
+        border-left: 3px solid #c9a227;
+        padding-right: 0;
+        padding-left: 15px;
+    }
+
+    .curso h2 {
+        font-size: 21px;
+    }
+
+    .contenido {
+        padding: 50px 20px;
+    }
+
+    .titulo-seccion {
+        gap: 10px;
+    }
+
+    .titulo-seccion span {
+        width: 25px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .materias {
+        grid-template-columns: 1fr;
+    }
+
+    .boton-flotante-izq {
+        bottom: 15px;
+        left: 15px;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}
+
+/* =====================================
+   CELULARES
+===================================== */
+
+@media (max-width: 450px) {
+    .institucion h1 {
+        font-size: 23px;
+    }
+
+    .institucion p {
+        font-size: 12px;
+    }
+
+    .materia {
+        padding: 20px;
+    }
+
+    .numero {
+        width: 48px;
+        height: 48px;
+    }
+
+    .informacion {
+        margin-left: 15px;
+    }
+
+    .informacion h3 {
+        font-size: 15px;
+    }
+
+    .informacion p {
+        font-size: 12px;
+    }
+
+    .flecha {
+        font-size: 21px;
+    }
 }
