@@ -1,1 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f8;
+    color: #17263a;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =====================================
+   ENCABEZADO
+===================================== */
+
+header {
+    width: 100%;
+    color: white;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(11, 31, 58, 0.96) 0%,
+            rgba(11, 31, 58, 0.88) 45%,
+            rgba(11, 31, 58, 0.65) 75%,
+            rgba(11, 31, 58, 0.45) 100%
+        ),
+        url("image-3-2-800x450.webp");
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.encabezado {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 180px;
+    padding: 35px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =====================================
+   INSTITUCIÓN
+===================================== */
+
+.institucion h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.institucion p {
+    margin-top: 8px;
+    color: #cbd3dc;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* =====================================
+   INFORMACIÓN DEL CURSO
+===================================== */
+
+.curso {
+    text-align: right;
+    border-right: 3px solid #c9a227;
+    padding-right: 20px;
+}
+
+.curso h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.curso p {
+    margin-top: 8px;
+    color: #cbd3dc;
+    font-size: 13px;
+}
+
+/* =====================================
+   CONTENIDO PRINCIPAL
+===================================== */
+
+main {
+    flex: 1;
+    width: 100%;
+}
+
+.contenido {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 30px 80px;
+}
+
+/* =====================================
+   TÍTULO DE SECCIÓN
+===================================== */
+
+.titulo-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.titulo-seccion span {
+    width: 45px;
+    height: 1px;
+    background: #c9a227;
+}
+
+.titulo-seccion h2 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #0b1f3a;
+}
+
+/* =====================================
+   DESCRIPCIÓN
+===================================== */
+
+.descripcion {
+    text-align: center;
+    margin: 18px auto 50px;
+    max-width: 600px;
+    color: #687585;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =====================================
+   MATERIAS
+===================================== */
+
+.materias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* =====================================
+   TARJETA
+===================================== */
+
+.materia {
+    min-height: 150px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #dfe3e7;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.materia::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #c9a227;
+}
+
+.numero {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid #c9a227;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b1f3a;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.informacion {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.informacion h3 {
+    color: #0b1f3a;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.informacion p {
+    color: #7a8490;
+    font-size: 13px;
+}
+
+.flecha {
+    font-size: 23px;
+    color: #c9a227;
+}
+
+.materia:hover {
+    background: #fafbfc;
+}
+
+.materia:hover .flecha {
+    color: #0b1f3a;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #e0e4e8;
+    background: white;
+    color: #89929d;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* =====================================
+   BOTÓN PEQUEÑO FLOTANTE (INFERIOR IZQUIERDA)
+===================================== */
+
+.boton-flotante-izq {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 1000;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 18px;
+    background: #0b1f3a;
+    color: #ffffff;
+
+    border: 1px solid #c9a227;
+    border-radius: 30px; /* Bordes redondeados compactos */
+    
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+
+    box-shadow: 0 4px 14px rgba(11, 31, 58, 0.25);
+    
+    /* Transiciones suaves para movimiento e invisibilidad */
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 0.3s ease, 
+                background-color 0.2s ease;
+}
+
+.boton-flotante-izq .icono {
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.boton-flotante-izq:hover {
+    background: #162f50;
+    color: #c9a227;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(11, 31, 58, 0.35);
+}
+
+.boton-flotante-izq:hover .icono {
+    transform: translateX(-3px);
+}
+
+/* Estado oculto al deslizar hacia abajo */
+.boton-flotante-izq.oculto {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(30px); /* Se esconde hacia abajo suavemente */
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 700px) {
+    .encabezado {
+        min-height: auto;
+        padding: 30px 25px;
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .curso {
+        text-align: left;
+        border-right: none;
+        border-left: 3px solid #c9a227;
+        padding-right: 0;
+        padding-left: 15px;
+    }
+
+    .curso h2 {
+        font-size: 21px;
+    }
+
+    .contenido {
+        padding: 50px 20px;
+    }
+
+    .titulo-seccion {
+        gap: 10px;
+    }
+
+    .titulo-seccion span {
+        width: 25px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .materias {
+        grid-template-columns: 1fr;
+    }
+
+    .boton-flotante-izq {
+        bottom: 15px;
+        left: 15px;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}
+
+/* =====================================
+   CELULARES
+===================================== */
+
+@media (max-width: 450px) {
+    .institucion h1 {
+        font-size: 23px;
+    }
+
+    .institucion p {
+        font-size: 12px;
+    }
+
+    .materia {
+        padding: 20px;
+    }
+
+    .numero {
+        width: 48px;
+        height: 48px;
+    }
+
+    .informacion {
+        margin-left: 15px;
+    }
+
+    .informacion h3 {
+        font-size: 15px;
+    }
+
+    .informacion p {
+        font-size: 12px;
+    }
+
+    .flecha {
+        font-size: 21px;
+    }
+}
