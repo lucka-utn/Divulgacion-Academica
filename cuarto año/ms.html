@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuarto año | Manuel Sadosky</title>
+    <title>Cuarto Año - Ing. Sadosky | Manuel Sadosky</title>
     <link rel="stylesheet" href="ms.css">
 </head>
 
@@ -18,8 +18,8 @@
             </div>
 
             <div class="curso">
-                <h2>CUARTO AÑO</h2>
-                <p>Campus Virtual · Divulgación Académica</p>
+                <h2>4.° AÑO - SADOSKY</h2>
+                <p>Directorio Comercial Digital · 2026</p>
             </div>
         </div>
     </header>
@@ -28,47 +28,51 @@
         <section class="contenido">
             <div class="titulo-seccion">
                 <span></span>
-                <h2>CONTENIDOS ACADÉMICOS</h2>
+                <h2>VIDEOS Y PROYECTOS - COMISIÓN SADOSKY</h2>
                 <span></span>
             </div>
 
             <p class="descripcion">
-                Seleccioná una materia para acceder a sus videos y materiales.
+                Registros audiovisuales y enlaces de los proyectos de Directorio Comercial Digital en proceso (Ciclo 2026).
             </p>
 
             <div class="materias">
-                <a href="matematica.html" class="materia">
-                    <div class="numero">01</div>
+                <!-- Olave Bianca -->
+                <a href="https://youtu.be/aQ6uvgyDms0?si=HXHxSFbSc-3Q6GH" target="_blank" class="materia">
+                    <div class="numero">🎬</div>
                     <div class="informacion">
-                        <h3>MATEMÁTICA</h3>
-                        <p>Videos y contenidos de la materia</p>
+                        <h3>Olave Bianca</h3>
+                        <p>Ver video del proyecto comercial (YouTube)</p>
                     </div>
                     <div class="flecha">→</div>
                 </a>
 
-                <a href="lengua.html" class="materia">
-                    <div class="numero">02</div>
+                <!-- Juan Cruz Quezada -->
+                <a href="https://youtu.be/bH_qZTXOFİY" target="_blank" class="materia">
+                    <div class="numero">🎬</div>
                     <div class="informacion">
-                        <h3>LENGUA</h3>
-                        <p>Videos y contenidos de la materia</p>
+                        <h3>Juan Cruz Quezada</h3>
+                        <p>Ver video del proyecto comercial (YouTube)</p>
                     </div>
                     <div class="flecha">→</div>
                 </a>
 
-                <a href="historia.html" class="materia">
-                    <div class="numero">03</div>
+                <!-- Betancur Agustina -->
+                <a href="https://youtu.be/ff2TESy2jUk?feature=shared" target="_blank" class="materia">
+                    <div class="numero">🎬</div>
                     <div class="informacion">
-                        <h3>HISTORIA</h3>
-                        <p>Videos y contenidos de la materia</p>
+                        <h3>Betancur Agustina</h3>
+                        <p>Ver video del proyecto comercial (YouTube)</p>
                     </div>
                     <div class="flecha">→</div>
                 </a>
 
-                <a href="geografia.html" class="materia">
-                    <div class="numero">04</div>
+                <!-- Astor Bascuñan -->
+                <a href="https://www.youtube.com/watch?v=IZZvvN9fwoo" target="_blank" class="materia">
+                    <div class="numero">🎬</div>
                     <div class="informacion">
-                        <h3>GEOGRAFÍA</h3>
-                        <p>Videos y contenidos de la materia</p>
+                        <h3>Astor Bascuñan</h3>
+                        <p>Ver video del proyecto comercial (YouTube)</p>
                     </div>
                     <div class="flecha">→</div>
                 </a>
@@ -80,32 +84,24 @@
         <p>Colegio Tecnológico René Favaloro · Divulgación Académica</p>
     </footer>
 
-    <!-- Botón pequeño flotante en la esquina inferior izquierda -->
-    <a href="../index.html" class="boton-flotante-izq" id="btnVolver">
+    <!-- Botón flotante para volver -->
+    <a href="cuarto.html" class="boton-flotante-izq" id="btnVolver">
         <span class="icono">←</span> Volver
     </a>
 
-    <!-- Script para detectar cuándo se sube o baja en la página -->
     <script>
         let lastScrollY = window.scrollY;
         const btnVolver = document.getElementById('btnVolver');
 
         window.addEventListener('scroll', () => {
             const currentScrollY = window.scrollY;
-
-            // Si está muy cerca del inicio, mantener visible
             if (currentScrollY < 50) {
                 btnVolver.classList.remove('oculto');
-            } 
-            // Si el usuario scrollea HACIA ABAJO -> ocultar
-            else if (currentScrollY > lastScrollY) {
+            } else if (currentScrollY > lastScrollY) {
                 btnVolver.classList.add('oculto');
-            } 
-            // Si el usuario scrollea HACIA ARRIBA -> mostrar
-            else {
+            } else {
                 btnVolver.classList.remove('oculto');
             }
-
             lastScrollY = currentScrollY;
         });
     </script>
