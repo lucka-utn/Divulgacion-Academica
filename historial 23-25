@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio Histórico (2023-2025) | Manuel Sadosky</title>
+    <link rel="stylesheet" href="ms.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="encabezado">
+            <div class="institucion">
+                <h1>Manuel Sadosky</h1>
+                <p>Colegio Tecnológico</p>
+            </div>
+
+            <div class="curso">
+                <h2>HISTORIAL 2023 - 2025</h2>
+                <p>Campus Virtual · Divulgación Académica</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contenido">
+            
+            <!-- =====================================
+               AÑO 2023
+            ===================================== -->
+            <div class="titulo-seccion">
+                <span></span>
+                <h2>PROYECTOS AÑO 2023</h2>
+                <span></span>
+            </div>
+
+            <p class="descripcion">
+                Proyectos de Robótica con Rasti Oki realizados por 1.° año (Cesar Milstein, René Favaloro y Marie Curie)[cite: 1].
+            </p>
+
+            <div class="materias">
+                <a href="https://www.youtube.com/watch?v=S8XHj0yZAXU&t=52s" target="_blank" class="materia">
+                    <div class="numero">23</div>
+                    <div class="informacion">
+                        <h3>Robótica con Rasti Oki (1.° Año)</h3>
+                        <p>Despertador Solar, Control de Temperatura, Calesita, Semáforos y Autitos[cite: 1]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+            </div>
+
+
+            <!-- =====================================
+               AÑO 2024
+            ===================================== -->
+            <div class="titulo-seccion" style="margin-top: 60px;">
+                <span></span>
+                <h2>PROYECTOS AÑO 2024</h2>
+                <span></span>
+            </div>
+
+            <p class="descripcion">
+                Trabajo anual del Colegio Preuniversitario UTN (1.° año: Cesar Milstein, René Favaloro y Marie Curie)[cite: 1].
+            </p>
+
+            <div class="materias">
+                <a href="https://www.youtube.com/watch?v=Cq1U2LbM27E&t=8s" target="_blank" class="materia">
+                    <div class="numero">24</div>
+                    <div class="informacion">
+                        <h3>Muestra Anual 2024</h3>
+                        <p>Registro audiovisual de los trabajos de primer año[cite: 1]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+            </div>
+
+
+            <!-- =====================================
+               AÑO 2025
+            ===================================== -->
+            <div class="titulo-seccion" style="margin-top: 60px;">
+                <span></span>
+                <h2>PROYECTOS AÑO 2025</h2>
+                <span></span>
+            </div>
+
+            <p class="descripcion">
+                Muestra anual, Taller de Robótica III y Agenda Comercial Digital[cite: 1, 2, 7, 8].
+            </p>
+
+            <!-- Subcategoría: Muestra General 2025 -->
+            <h3 style="margin: 30px 0 15px; color: #0b1f3a; font-size: 18px; letter-spacing: 1px;">Muestra Anual General</h3>
+            <div class="materias">
+                <a href="https://www.youtube.com/watch?v=4gkM6C1LUik&t=18s" target="_blank" class="materia">
+                    <div class="numero">25</div>
+                    <div class="informacion">
+                        <h3>Muestra Anual 2025</h3>
+                        <p>Apps interdisciplinarias en Scratch y Patio Inteligente con Robótica[cite: 1]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+            </div>
+
+            <!-- Subcategoría: Taller de Informática y Robótica III (Hidrocarburos) -->
+            <h3 style="margin: 30px 0 15px; color: #0b1f3a; font-size: 18px; letter-spacing: 1px;">Taller de Informática y Robótica III (Comisión: Federico Leloir)[cite: 2]</h3>
+            <div class="materias">
+                <a href="https://drive.google.com/file/d/1yCDxBAzpitZrkFAaKXBBRDQXWEEkTzp3/view?usp=sharing" target="_blank" class="materia">
+                    <div class="numero">T3</div>
+                    <div class="informacion">
+                        <h3>Software Hidrocarburífero (Parte 1)</h3>
+                        <p>Desarrollo de software de gestión para el sector hidrocarburífero[cite: 2]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1snTAzN27-Q5BO22JxnSswAFSvZkQV3yL/view?usp=sharing" target="_blank" class="materia">
+                    <div class="numero">T3</div>
+                    <div class="informacion">
+                        <h3>Software Hidrocarburífero (Parte 2)</h3>
+                        <p>Desarrollo de software de gestión para el sector hidrocarburífero[cite: 2]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1JaWShzeadOnGwwr7HG4euFZKwQnny8sh/view?usp=sharing" target="_blank" class="materia">
+                    <div class="numero">T3</div>
+                    <div class="informacion">
+                        <h3>Software Hidrocarburífero (Parte 3)</h3>
+                        <p>Desarrollo de software de gestión para el sector hidrocarburífero[cite: 2]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1CvA4FXjfHwahQEx2VSiNsMLIEFBvB54e/view?usp=sharing" target="_blank" class="materia">
+                    <div class="numero">T3</div>
+                    <div class="informacion">
+                        <h3>Software Hidrocarburífero (Parte 4)</h3>
+                        <p>Desarrollo de software de gestión para el sector hidrocarburífero[cite: 2]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+            </div>
+
+            <!-- Subcategoría: Agenda Comercial Digital 2025 (Comisión Ing. Sadosky) -->
+            <h3 style="margin: 30px 0 15px; color: #0b1f3a; font-size: 18px; letter-spacing: 1px;">Agenda Comercial Digital 2025 (Comisión: Ing. Sadosky)[cite: 7, 8]</h3>
+            <div class="materias">
+                <a href="https://petiteenails.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Fiamma Iacaruso</h3>
+                        <p>Sitio web individual (Netlify)[cite: 7]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://landingpageutnfrn.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Página Grupal 2025</h3>
+                        <p>Landing Page UTN FRN[cite: 7]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://scintillating-starlight-550099.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Joaquín Pichulmay</h3>
+                        <p>Sitio web individual (Netlify)[cite: 7]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://unrivaled-gaufre-5b6876.netlify.app" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Uriel San Martin</h3>
+                        <p>Sitio web individual (Netlify)[cite: 7]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://extraordinary-cendol-c08b8a.netlify.app" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Francisco Monsalvez</h3>
+                        <p>Sitio web individual (Netlify)[cite: 7]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://sweet-tanuki-3be258.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Monsalvez, Sanmartin, Duran</h3>
+                        <p>Página grupal[cite: 7]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://incandescent-boba-512c3c.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>David Sepulveda</h3>
+                        <p>Sitio web individual (Netlify)[cite: 7, 8]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://wondrous-sunburst-c62391.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Antipan, Iril y Paneblanco</h3>
+                        <p>Página grupal[cite: 8]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://lighthearted-halva-4250d7.netlify.app" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Tomas Antipan</h3>
+                        <p>Sitio web individual (Netlify)[cite: 8]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://singular-beijinho-3caec8.netlify.app" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Leandro Paneblanco</h3>
+                        <p>Sitio web individual (Netlify)[cite: 8]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://tiny-kangaroo-clda7b.netlify.app" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Juan Chirinos</h3>
+                        <p>Sitio web individual (Netlify)[cite: 8]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://loquacious-sawine-5d6c19.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Chirinos, Bottinelli, Borgonovo</h3>
+                        <p>Página grupal[cite: 8]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://monamour-cco.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Ignacio Borgonovo</h3>
+                        <p>Sitio web individual (Netlify)[cite: 8]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://mecanicaas.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>William Salazar</h3>
+                        <p>Sitio web individual (Netlify)[cite: 8]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://lautycurso.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">AC</div>
+                    <div class="informacion">
+                        <h3>Lauty Leon Melo</h3>
+                        <p>Sitio web individual (Netlify)[cite: 8]</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Colegio Tecnológico René Favaloro · Divulgación Académica</p>
+    </footer>
+
+    <!-- Botón flotante para volver -->
+    <a href="index.html" class="boton-flotante-izq">
+        <span class="icono">←</span> Volver
+    </a>
+
+</body>
+
+</html>
