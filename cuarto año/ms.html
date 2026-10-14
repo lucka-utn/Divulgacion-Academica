@@ -19,21 +19,23 @@
 
             <div class="curso">
                 <h2>4.° AÑO - SADOSKY</h2>
-                <p>Directorio Comercial Digital · 2026</p>
+                <p>Proyectos y Trabajos · 2026</p>
             </div>
         </div>
     </header>
 
     <main>
         <section class="contenido">
+            
+            <!-- SECCIÓN 1: DIRECTORIO COMERCIAL -->
             <div class="titulo-seccion">
                 <span></span>
-                <h2>VIDEOS DE LA COMISIÓN SADOSKY 2026</h2>
+                <h2>DIRECTORIO COMERCIAL DIGITAL 2026</h2>
                 <span></span>
             </div>
 
             <p class="descripcion">
-                Seleccioná un proyecto para ver el video correspondiente.
+                Videos y registros de los proyectos de Directorio Comercial Digital.
             </p>
 
             <div class="materias">
@@ -177,6 +179,70 @@
                     <div class="flecha">→</div>
                 </a>
             </div>
+
+            <!-- SECCIÓN 2: EDUCACIÓN VIAL (Abajo del todo) -->
+            <div class="titulo-seccion" style="margin-top: 60px;">
+                <span></span>
+                <h2>PROYECTOS 2026 - EDUCACIÓN VIAL</h2>
+                <span></span>
+            </div>
+
+            <p class="descripcion">
+                Sitios y trabajos desarrollados para el área de Educación Vial (Comisión Sadosky).
+            </p>
+
+            <div class="materias">
+                <!-- Lucio Conti (Educación Vial) -->
+                <a href="https://educacionvialconti.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">01</div>
+                    <div class="informacion">
+                        <h3>Lucio Conti</h3>
+                        <p>Sitio de Educación Vial</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <!-- Aguila Valentina (Educación Vial) -->
+                <a href="https://educacionviial.netlify.app" target="_blank" class="materia">
+                    <div class="numero">02</div>
+                    <div class="informacion">
+                        <h3>Aguila Valentina</h3>
+                        <p>Sitio de Educación Vial</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <!-- Siri Evangelina (Educación Vial) -->
+                <a href="https://educacionviiial.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">03</div>
+                    <div class="informacion">
+                        <h3>Siri Evangelina</h3>
+                        <p>Sitio de Educación Vial</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <!-- Rubilar Orita (Educación Vial) -->
+                <a href="https://rad-haupia-8c68cb.netlify.app" target="_blank" class="materia">
+                    <div class="numero">04</div>
+                    <div class="informacion">
+                        <h3>Rubilar Orita</h3>
+                        <p>Sitio de Educación Vial</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <!-- Alma Jazmín Narambuena (Educación Vial) -->
+                <a href="https://educacionvial2.netlify.app/" target="_blank" class="materia">
+                    <div class="numero">05</div>
+                    <div class="informacion">
+                        <h3>Alma Jazmín Narambuena</h3>
+                        <p>Sitio de Educación Vial</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+            </div>
+
         </section>
     </main>
 
@@ -184,35 +250,10 @@
         <p>Colegio Tecnológico René Favaloro · Divulgación Académica</p>
     </footer>
 
-    <!-- Botón pequeño flotante en la esquina inferior izquierda -->
+    <!-- Botón pequeño flotante en la esquina inferior izquierda (recordá ajustar "cuarto.html" al nombre real de tu archivo de origen) -->
     <a href="../index.html" class="boton-flotante-izq" id="btnVolver">
         <span class="icono">←</span> Volver
     </a>
-
-    <!-- Script para detectar cuándo se sube o baja en la página -->
-    <script>
-        let lastScrollY = window.scrollY;
-        const btnVolver = document.getElementById('btnVolver');
-
-        window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
-
-            // Si está muy cerca del inicio, mantener visible
-            if (currentScrollY < 50) {
-                btnVolver.classList.remove('oculto');
-            } 
-            // Si el usuario scrollea HACIA ABAJO -> ocultar
-            else if (currentScrollY > lastScrollY) {
-                btnVolver.classList.add('oculto');
-            } 
-            // Si el usuario scrollea HACIA ARRIBA -> mostrar
-            else {
-                btnVolver.classList.remove('oculto');
-            }
-
-            lastScrollY = currentScrollY;
-        });
-    </script>
 
 </body>
 
