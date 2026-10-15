@@ -26,6 +26,7 @@
 
     <main>
         <section class="contenido">
+
             <div class="titulo-seccion">
                 <span></span>
                 <h2>CONTENIDOS ACADÉMICOS</h2>
@@ -37,6 +38,7 @@
             </p>
 
             <div class="materias">
+
                 <a href="matematica.html" class="materia">
                     <div class="numero">01</div>
                     <div class="informacion">
@@ -72,9 +74,11 @@
                     </div>
                     <div class="flecha">→</div>
                 </a>
+
             </div>
 
             <!-- TALLER DE MÚSICA Y SONIDO -->
+
             <div class="titulo-seccion" style="margin-top: 45px;">
                 <span></span>
                 <h2>TALLER DE MÚSICA Y SONIDO</h2>
@@ -85,40 +89,64 @@
                 Registro de actividades y prácticas del Taller de Música y Sonido.
             </p>
 
-            <div class="contenedor-videos" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px;">
-                
-                <!-- Video 1 -->
-                <div class="tarjeta-video" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: #fff;">Taller de Música y Sonido - Video 1</h3>
-                    <video controls style="width: 100%; height: auto; border-radius: 8px; display: block; background-color: #000;">
+            <!-- CONTENEDOR DE VIDEOS -->
+
+            <div class="contenedor-videos">
+
+                <!-- VIDEO 1 -->
+
+                <div class="tarjeta-video">
+                    <h3>Taller de Música y Sonido - Video 1</h3>
+
+                    <video controls preload="metadata">
                         <source src="MUSICAYSONIDO (2).mp4" type="video/mp4">
                         Tu navegador no soporta la reproducción de video.
                     </video>
                 </div>
 
-                <!-- Video 2 -->
-                <div class="tarjeta-video" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 15px;">
-                    <h3 style="font-size: 1.1rem; margin-bottom: 10px; color: #fff;">Taller de Música y Sonido - Video 2</h3>
-                    <video controls style="width: 100%; height: auto; border-radius: 8px; display: block; background-color: #000;">
+                <!-- VIDEO 2 -->
+
+                <div class="tarjeta-video">
+                    <h3>Taller de Música y Sonido - Video 2</h3>
+
+                    <video controls preload="metadata">
                         <source src="VID_20260409_173756433.mp4" type="video/mp4">
                         Tu navegador no soporta la reproducción de video.
                     </video>
                 </div>
 
+                <!-- VIDEO 3: GOOGLE DRIVE -->
+
+                <div class="tarjeta-video">
+                    <h3>Taller de Música y Sonido - Video 3</h3>
+
+                    <iframe
+                        src="https://drive.google.com/file/d/1rCafNi4uor-FE10vFq0YzUZOW-IjycpA/preview"
+                        title="Taller de Música y Sonido - Video 3"
+                        allow="autoplay"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
             </div>
+
         </section>
     </main>
+
+    <!-- PIE DE PÁGINA -->
 
     <footer>
         <p>Colegio Tecnológico René Favaloro · Divulgación Académica</p>
     </footer>
 
-    <!-- Botón pequeño flotante en la esquina inferior izquierda -->
+    <!-- BOTÓN VOLVER -->
+
     <a href="../index.html" class="boton-flotante-izq" id="btnVolver">
         <span class="icono">←</span> Volver
     </a>
 
-    <!-- Script para detectar cuándo se sube o baja en la página -->
+    <!-- SCRIPT DEL BOTÓN FLOTANTE -->
+
     <script>
         let lastScrollY = window.scrollY;
         const btnVolver = document.getElementById('btnVolver');
@@ -126,16 +154,11 @@
         window.addEventListener('scroll', () => {
             const currentScrollY = window.scrollY;
 
-            // Si está muy cerca del inicio, mantener visible
             if (currentScrollY < 50) {
                 btnVolver.classList.remove('oculto');
-            } 
-            // Si el usuario scrollea HACIA ABAJO -> ocultar
-            else if (currentScrollY > lastScrollY) {
+            } else if (currentScrollY > lastScrollY) {
                 btnVolver.classList.add('oculto');
-            } 
-            // Si el usuario scrollea HACIA ARRIBA -> mostrar
-            else {
+            } else {
                 btnVolver.classList.remove('oculto');
             }
 
