@@ -10,8 +10,11 @@
 
 <body>
 
+    <!-- ENCABEZADO -->
+
     <header>
         <div class="encabezado">
+
             <div class="institucion">
                 <h1>RENÉ FAVALORO</h1>
                 <p>Colegio Tecnológico</p>
@@ -21,11 +24,17 @@
                 <h2>PRIMER AÑO</h2>
                 <p>Campus Virtual · Divulgación Académica</p>
             </div>
+
         </div>
     </header>
 
+
+    <!-- CONTENIDO PRINCIPAL -->
+
     <main>
         <section class="contenido">
+
+            <!-- CONTENIDOS ACADÉMICOS -->
 
             <div class="titulo-seccion">
                 <span></span>
@@ -37,95 +46,110 @@
                 Seleccioná una materia para acceder a sus videos y materiales.
             </p>
 
+
+            <!-- MATERIAS -->
+
             <div class="materias">
 
+                <!-- MATEMÁTICA -->
+
                 <a href="matematica.html" class="materia">
+
                     <div class="numero">01</div>
+
                     <div class="informacion">
                         <h3>MATEMÁTICA</h3>
                         <p>Videos y contenidos de la materia</p>
                     </div>
+
                     <div class="flecha">→</div>
+
                 </a>
 
+
+                <!-- LENGUA -->
+
                 <a href="lengua.html" class="materia">
+
                     <div class="numero">02</div>
+
                     <div class="informacion">
                         <h3>LENGUA</h3>
                         <p>Videos y contenidos de la materia</p>
                     </div>
+
                     <div class="flecha">→</div>
+
                 </a>
 
+
+                <!-- HISTORIA -->
+
                 <a href="historia.html" class="materia">
+
                     <div class="numero">03</div>
+
                     <div class="informacion">
                         <h3>HISTORIA</h3>
                         <p>Videos y contenidos de la materia</p>
                     </div>
+
                     <div class="flecha">→</div>
+
                 </a>
 
+
+                <!-- GEOGRAFÍA -->
+
                 <a href="geografia.html" class="materia">
+
                     <div class="numero">04</div>
+
                     <div class="informacion">
                         <h3>GEOGRAFÍA</h3>
                         <p>Videos y contenidos de la materia</p>
                     </div>
+
                     <div class="flecha">→</div>
+
                 </a>
 
             </div>
 
+
             <!-- TALLER DE MÚSICA Y SONIDO -->
 
             <div class="titulo-seccion" style="margin-top: 45px;">
+
                 <span></span>
+
                 <h2>TALLER DE MÚSICA Y SONIDO</h2>
+
                 <span></span>
+
             </div>
+
 
             <p class="descripcion">
                 Registro de actividades y prácticas del Taller de Música y Sonido.
             </p>
 
-            <!-- CONTENEDOR DE VIDEOS -->
+
+            <!-- VIDEO DE GOOGLE DRIVE -->
 
             <div class="contenedor-videos">
 
-                <!-- VIDEO 1 -->
-
                 <div class="tarjeta-video">
-                    <h3>Taller de Música y Sonido - Video 1</h3>
 
-                    <video controls preload="metadata">
-                        <source src="MUSICAYSONIDO (2).mp4" type="video/mp4">
-                        Tu navegador no soporta la reproducción de video.
-                    </video>
-                </div>
-
-                <!-- VIDEO 2 -->
-
-                <div class="tarjeta-video">
-                    <h3>Taller de Música y Sonido - Video 2</h3>
-
-                    <video controls preload="metadata">
-                        <source src="VID_20260409_173756433.mp4" type="video/mp4">
-                        Tu navegador no soporta la reproducción de video.
-                    </video>
-                </div>
-
-                <!-- VIDEO 3: GOOGLE DRIVE -->
-
-                <div class="tarjeta-video">
-                    <h3>Taller de Música y Sonido - Video 3</h3>
+                    <h3>Taller de Música y Sonido</h3>
 
                     <iframe
                         src="https://drive.google.com/file/d/1rCafNi4uor-FE10vFq0YzUZOW-IjycpA/preview"
-                        title="Taller de Música y Sonido - Video 3"
-                        allow="autoplay"
+                        title="Video del Taller de Música y Sonido"
+                        allow="autoplay; fullscreen"
                         allowfullscreen>
                     </iframe>
+
                 </div>
 
             </div>
@@ -133,37 +157,65 @@
         </section>
     </main>
 
+
     <!-- PIE DE PÁGINA -->
 
     <footer>
         <p>Colegio Tecnológico René Favaloro · Divulgación Académica</p>
     </footer>
 
+
     <!-- BOTÓN VOLVER -->
 
     <a href="../index.html" class="boton-flotante-izq" id="btnVolver">
-        <span class="icono">←</span> Volver
+
+        <span class="icono">←</span>
+
+        Volver
+
     </a>
 
-    <!-- SCRIPT DEL BOTÓN FLOTANTE -->
+
+    <!-- SCRIPT PARA OCULTAR Y MOSTRAR EL BOTÓN -->
 
     <script>
+
         let lastScrollY = window.scrollY;
+
         const btnVolver = document.getElementById('btnVolver');
 
         window.addEventListener('scroll', () => {
+
             const currentScrollY = window.scrollY;
 
+            // Si está cerca del inicio, mantener visible.
+
             if (currentScrollY < 50) {
+
                 btnVolver.classList.remove('oculto');
-            } else if (currentScrollY > lastScrollY) {
+
+            }
+
+            // Si el usuario baja, ocultar.
+
+            else if (currentScrollY > lastScrollY) {
+
                 btnVolver.classList.add('oculto');
-            } else {
+
+            }
+
+            // Si el usuario sube, mostrar.
+
+            else {
+
                 btnVolver.classList.remove('oculto');
+
             }
 
             lastScrollY = currentScrollY;
+
         });
+
     </script>
 
 </body>
