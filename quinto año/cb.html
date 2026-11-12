@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,7 +9,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="encabezado">
             <div class="institucion">
@@ -74,6 +72,66 @@
                     <div class="flecha">→</div>
                 </a>
             </div>
+
+            <div class="titulo-seccion" style="margin-top: 60px;">
+                <span></span>
+                <h2>PROYECTOS DE ESTUDIANTES</h2>
+                <span></span>
+            </div>
+
+            <p class="descripcion">
+                Producciones y trabajos de la comisión Berdichevsky.
+            </p>
+
+            <div class="materias">
+                <a href="https://drive.google.com/file/d/1PsdiiwvOiA8AJu-kWJPwGa5q1CAsLmyG/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="materia">
+                    <div class="numero">01</div>
+                    <div class="informacion">
+                        <h3>Sepulveda - Antipan</h3>
+                        <p>Podcast · Ver proyecto en Google Drive</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1MsaTVYhECOCgSubMhHoXxhST4jwgUKfe/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="materia">
+                    <div class="numero">02</div>
+                    <div class="informacion">
+                        <h3>San Martin - Tortone</h3>
+                        <p>Proyecto backend · Ver trabajo en Google Drive</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1hCOqauQ5icW4QuP12OygmnIzUA2sfcAZ/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="materia">
+                    <div class="numero">03</div>
+                    <div class="informacion">
+                        <h3>Iacarусso - Quesada</h3>
+                        <p>Ver proyecto en Google Drive</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1rNw888lWdSGikYfElWe0w-PhPx4mm8ZG/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="materia">
+                    <div class="numero">04</div>
+                    <div class="informacion">
+                        <h3>Geronimo Acuña</h3>
+                        <p>Ver proyecto en Google Drive</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+            </div>
         </section>
     </main>
 
@@ -97,12 +155,12 @@
             // Si está muy cerca del inicio, mantener visible
             if (currentScrollY < 50) {
                 btnVolver.classList.remove('oculto');
-            } 
-            // Si el usuario scrollea HACIA ABAJO -> ocultar
+            }
+            // Si el usuario scrollea hacia abajo, ocultar
             else if (currentScrollY > lastScrollY) {
                 btnVolver.classList.add('oculto');
-            } 
-            // Si el usuario scrollea HACIA ARRIBA -> mostrar
+            }
+            // Si el usuario scrollea hacia arriba, mostrar
             else {
                 btnVolver.classList.remove('oculto');
             }
@@ -110,7 +168,6 @@
             lastScrollY = currentScrollY;
         });
     </script>
-
 </body>
 
 </html>
