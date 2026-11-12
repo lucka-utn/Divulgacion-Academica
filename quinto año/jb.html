@@ -32,49 +32,53 @@
             </div>
 
             <p class="descripcion">
-                Seleccioná un proyecto para ver el video y contenidos de la materia.
+                Seleccioná un proyecto para ver el video y los contenidos de la materia.
             </p>
 
             <div class="materias">
                 <!-- Lautaro Leon Melo -->
-                <a href="https://youtu.be/mjhBew8fOBA?si=aDig01DOZGIZAD3N" target="_blank" rel="noopener noreferrer" class="materia">
+                <div class="materia">
                     <div class="numero">01</div>
                     <div class="informacion">
                         <h3>Lautaro Leon Melo</h3>
-                        <p>Diseño Backend (YouTube)</p>
+                        <div style="margin-top: 6px; display: flex; flex-direction: column; gap: 4px;">
+                            <a href="https://youtu.be/mjhBew8fOBA?si=aDig01DOZGIZAD3N" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; font-size: 0.9rem; font-weight: bold;">▶️ Ver proyecto (YouTube)</a>
+                        </div>
                     </div>
-                    <div class="flecha">→</div>
-                </a>
+                </div>
 
                 <!-- Hermosilla Mariano y Joaquin Pichulmay -->
-                <a href="https://drive.google.com/file/d/1jfVYTj8wcPKcbPoYPo8Lcegl8KPI43V6/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="materia">
+                <div class="materia">
                     <div class="numero">02</div>
                     <div class="informacion">
                         <h3>Hermosilla Mariano y Joaquin Pichulmay</h3>
-                        <p>Diseño Backend (Google Drive)</p>
+                        <div style="margin-top: 6px; display: flex; flex-direction: column; gap: 4px;">
+                            <a href="https://drive.google.com/file/d/1jfVYTj8wcPKcbPoYPo8Lcegl8KPI43V6/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; font-size: 0.9rem; font-weight: bold;">📁 Ver proyecto (Google Drive)</a>
+                        </div>
                     </div>
-                    <div class="flecha">→</div>
-                </a>
+                </div>
 
-                <!-- Abarzua, Valdez y Gutierrez -->
-                <a href="https://drive.google.com/file/d/17YDc2oeUIqI5lwnY2NsE651drVBiQ7O-/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="materia">
+                <!-- Abarzua - Valdez - Gutierrez -->
+                <div class="materia">
                     <div class="numero">03</div>
                     <div class="informacion">
                         <h3>Abarzua - Valdez - Gutierrez</h3>
-                        <p>Diseño Backend (Google Drive)</p>
+                        <div style="margin-top: 6px; display: flex; flex-direction: column; gap: 4px;">
+                            <a href="https://drive.google.com/file/d/17YDc2oeUIqI5lwnY2NsE651drVBiQ7O-/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; font-size: 0.9rem; font-weight: bold;">📁 Ver proyecto (Google Drive)</a>
+                        </div>
                     </div>
-                    <div class="flecha">→</div>
-                </a>
+                </div>
 
-                <!-- Iril y Borgonovo -->
-                <a href="https://drive.google.com/file/d/1erCHPkUohMpc0cG25BR20rNLtT4-2Tah/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="materia">
+                <!-- Iril - Borgonovo -->
+                <div class="materia">
                     <div class="numero">04</div>
                     <div class="informacion">
                         <h3>Iril - Borgonovo</h3>
-                        <p>Diseño Backend (Google Drive)</p>
+                        <div style="margin-top: 6px; display: flex; flex-direction: column; gap: 4px;">
+                            <a href="https://drive.google.com/file/d/1erCHPkUohMpc0cG25BR20rNLtT4-2Tah/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; font-size: 0.9rem; font-weight: bold;">📁 Ver proyecto (Google Drive)</a>
+                        </div>
                     </div>
-                    <div class="flecha">→</div>
-                </a>
+                </div>
             </div>
         </section>
     </main>
@@ -96,16 +100,11 @@
         window.addEventListener('scroll', () => {
             const currentScrollY = window.scrollY;
 
-            // Si está muy cerca del inicio, mantener visible
             if (currentScrollY < 50) {
                 btnVolver.classList.remove('oculto');
-            }
-            // Si el usuario scrollea hacia abajo, ocultar
-            else if (currentScrollY > lastScrollY) {
+            } else if (currentScrollY > lastScrollY) {
                 btnVolver.classList.add('oculto');
-            }
-            // Si el usuario scrollea hacia arriba, mostrar
-            else {
+            } else {
                 btnVolver.classList.remove('oculto');
             }
 
