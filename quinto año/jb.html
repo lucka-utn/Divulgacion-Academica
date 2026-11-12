@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="encabezado">
             <div class="institucion">
@@ -38,7 +37,7 @@
 
             <div class="materias">
                 <!-- Lautaro Leon Melo -->
-                <a href="https://youtu.be/mjhBew8fOBA?si=aDig01DOZGIZAD3N" target="_blank" class="materia">
+                <a href="https://youtu.be/mjhBew8fOBA?si=aDig01DOZGIZAD3N" target="_blank" rel="noopener noreferrer" class="materia">
                     <div class="numero">01</div>
                     <div class="informacion">
                         <h3>Lautaro Leon Melo</h3>
@@ -48,10 +47,30 @@
                 </a>
 
                 <!-- Hermosilla Mariano y Joaquin Pichulmay -->
-                <a href="https://drive.google.com/file/d/1jfVYTj8wcPKcbPoYPo8Lcegl8KPI43V6/view?usp=sharing" target="_blank" class="materia">
+                <a href="https://drive.google.com/file/d/1jfVYTj8wcPKcbPoYPo8Lcegl8KPI43V6/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="materia">
                     <div class="numero">02</div>
                     <div class="informacion">
                         <h3>Hermosilla Mariano y Joaquin Pichulmay</h3>
+                        <p>Diseño Backend (Google Drive)</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <!-- Abarzua, Valdez y Gutierrez -->
+                <a href="https://drive.google.com/file/d/17YDc2oeUIqI5lwnY2NsE651drVBiQ7O-/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="materia">
+                    <div class="numero">03</div>
+                    <div class="informacion">
+                        <h3>Abarzua - Valdez - Gutierrez</h3>
+                        <p>Diseño Backend (Google Drive)</p>
+                    </div>
+                    <div class="flecha">→</div>
+                </a>
+
+                <!-- Iril y Borgonovo -->
+                <a href="https://drive.google.com/file/d/1erCHPkUohMpc0cG25BR20rNLtT4-2Tah/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="materia">
+                    <div class="numero">04</div>
+                    <div class="informacion">
+                        <h3>Iril - Borgonovo</h3>
                         <p>Diseño Backend (Google Drive)</p>
                     </div>
                     <div class="flecha">→</div>
@@ -80,12 +99,12 @@
             // Si está muy cerca del inicio, mantener visible
             if (currentScrollY < 50) {
                 btnVolver.classList.remove('oculto');
-            } 
-            // Si el usuario scrollea HACIA ABAJO -> ocultar
+            }
+            // Si el usuario scrollea hacia abajo, ocultar
             else if (currentScrollY > lastScrollY) {
                 btnVolver.classList.add('oculto');
-            } 
-            // Si el usuario scrollea HACIA ARRIBA -> mostrar
+            }
+            // Si el usuario scrollea hacia arriba, mostrar
             else {
                 btnVolver.classList.remove('oculto');
             }
@@ -93,7 +112,6 @@
             lastScrollY = currentScrollY;
         });
     </script>
-
 </body>
 
 </html>
